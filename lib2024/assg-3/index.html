@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="HTML, HTML5, Special Tags, Forms">
+	<title>Assignment 3</title>
+	<style type="text/css">
+		body {
+			background-color: rgba(255, 182, 193, 0.3);
+		}
+		h1 {
+			color: purple;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<h1>Registration Form</h1>
+	</header>
+	<div id="wrapper" class="wrapper">
+		<section id="main-section-1" class="main-section">
+			<h4>About yourself</h4>
+			<form id="html-form" action="somepage.php" method="get"> 
+				<div id="intro-text-container" class="form-elm">
+					<label for="intro-text">Introductory Text:</label>
+					<textarea name="intro-text" id="intro-text" placeholder="Enter Text Here">
+						Enter Text Here
+					</textarea>				
+				</div>
+
+				<div id="first-name-container" class="main-div">
+					<label for="firstname">First Name:</label>
+					<input type="text" name="firstname" id="firstname" placeholder="Enter First Name Here" required>
+				</div>
+
+				<div id="last-name-container" class="form-elm">
+					<label for="lastname">Last Name:</label>
+					<input type="text" name="lastname" id="lastname" placeholder="Enter Last Name Here" required>
+				</div>
+
+				<div id="dob-container" class="form-elm">
+					<label for="dob">Date of Birth:</label>
+					<input type="date" name="dob" id="dob" required>
+				</div>
+
+				<div id="email-container" class="form-elm">
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" value="email@example.com" placeholder="Enter Email Here" required>
+				</div>
+
+				<div id="password-container" class="form-elm">
+					<label for="pass">Password:</label>
+					<input type="password" name="pass" id="pass" required>
+				</div>
+
+				<div id="mobile-number-container" class="form-elm">
+					<label for="mn">Mobile Number:</label>
+					<input type="number" name="mn" id="mn" placeholder="555-555-5555">
+				</div>
+
+				<div id="radio-container" class="form-elm">
+					<p>Choose A Gender:</p>
+					<label for="male">
+						<input type="radio" name="gen" id="male" value="male" checked>
+						Male
+					</label>
+					<label for="female">
+						<input type="radio" name="gen" id="female" value="female">
+						Female
+					</label>
+					<label for="other">
+						<input type="radio" name="gen" id="other" value="other">
+						Other
+					</label>
+				
+					<label for="I-prefer-not-to-say">
+						<input type="radio" name="gen" id="I-prefer-not-to-say" value="I-prefer-not-to-say">
+						I prefer not to say
+					</label>
+				</div>
+
+				<div id="address-container" class="form-elm">
+					<h4>Where do you live?</h4>
+				</div>
+					<label for="address">Address:</label>
+					<input type="text" name="address" id="address" placeholder="Enter Address Here" required>
+				<div id="city-container" class="form-elm">
+					<label for="city">City:</label>
+					<input type="text" name="city" id="city" placeholder="Enter City Here">
+				</div>
+
+				<div id="province-drop-container" class="form-elm">
+					<label for="province">Province:</label>
+					<select name="province" id="province">
+						<optgroup label="Province">
+							<option value="Alberta">Alberta</option>
+							<option value="British_Colombia">British Colombia</option>
+							<option value="Manitoba">Manitoba</option>
+							<option value="New_Brunswick">New Brunswick</option>
+							<option value="Newfoundland_and_Labrador">Newfoundland and Labrador</option>
+							<option value="Nova_Scotia">Nova Scotia</option>
+							<option value="Ontario">Ontario</option>
+							<option value="Prince_Edward_Island">Prince Edward Island</option>
+							<option value="Quebec">Qu&eacute;bec</option> 
+							<option value="Saskatchewan">Saskatchewan</option>
+						</optgroup>
+					</select>
+				</div>
+
+				<div id="country-drop-container" class="form-elm">
+					<label for="country">Country:</label>
+					<select name="country" id="country">
+						<optgroup label="Country">
+							<option value="Afganistan">Afganistan</option>
+							<option value="Brazil">Brazil</option>
+							<option value="Canada">Canada</option>
+							<option value="Denmark">Denmark</option>
+							<option value="Egypt">Egypt</option>
+							<option value="France">France</option>
+							<option value="Germany">Germany</option>
+							<option value="Haiti">Haiti</option>
+							<option value="India">India</option>
+							<option value="Japan">Japan</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Loas">Loas</option>
+							<option value="Mexico">Mexico</option>
+							<option value="New Zealand">New Zealand</option>
+							<option value="Oman">Oman</option>
+							<option value="Peru">Peru</option>
+							<option value="Qatar">Qatar</option>
+							<option value="Romania">Romania</option>
+							<option value="Switzerland">Switerland</option>
+							<option value="Thailand">Thailand</option>
+							<option value="United States">United States</option>
+							<option value="Venezuela">Venezuela</option>
+						</optgroup>
+					</select>
+				</div>
+
+				<div id="postal-code-container" class="form-elm">
+					<label for="postal-code">Postal Code:</label>
+					<input type="text" name="pc" id="postal-code" placeholder="Enter Postal Code Here">
+				</div>
+
+				<fieldset>
+					<legend><b>Hobbies/Interests:</b></legend>
+					<div id="check-box-hi-container" class="form-elm">
+						<label for="sports">Sports</label>
+						<input type="checkbox" name="hob-int" id="sports" value="sports"><br>
+
+						<label for="music">Music</label>
+						<input type="checkbox" name="hob-int" id="music" value="music"><br>
+
+						<label for="drawing">Drawing</label>
+						<input type="checkbox" name="hob-int" id="drawing" value="drawing"><br>
+
+						<label for="painting">Painting</label>
+						<input type="checkbox" name="hob-int" id="painting" value="painting"><br>
+
+						<label for="singing">Singing</label>
+						<input type="checkbox" name="hob-int" id="singing" value="singing"><br>
+
+					</div>
+					</fieldset>
+
+				<div id="url-container" class="form-elm">
+					<label for="website">Enter a URL:</label>
+					<input type="url" name="website" id="website" placeholder="Enter URL Here"><br>
+				</div>
+
+				<button type="submit">Submit</button>
+
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
