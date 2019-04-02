@@ -1,4 +1,4 @@
-@charset "utf-8"
+@charset "utf-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -125,7 +125,7 @@ a {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 10px;
-	margin auto;
+	margin: auto;
 
 
 }
