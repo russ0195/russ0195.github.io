@@ -123,5 +123,54 @@
 			<strong>Ans:</strong> I would link an external style sheet to the index file by typing ' &lt;link rel=stylesheet type=text/css href=css/style.css&gt;' in the index file. This connects the css folder with the style.css external style sheet file in it to the index folder.
 		</p>
 	</li>
+
+	<!-- Question 13 -->
+	<li>
+		<p>
+			<strong>Qus:</strong>Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px. 
+		</p>
+		<p>
+			<strong>Ans:</strong>
+			block{
+			width: 200px;
+			height: 200px;
+			margin: 0 auto;
+			padding-top: 200px;
+			position: absolute;
+		}
+		</p>
+	</li>
+
+	<!-- Question 14 -->
+	<li>
+		<p>
+			<strong>Qus:</strong>Create CSS keyframes block called "spin" that rotates an element.
+		</p>
+		<p>
+			<strong>Ans:</strong> @keyframes spin {
+										from {
+											transform: rotate(0deg);
+									}
+										to {
+										transform: rotate(360deg);
+									}
+								}
+		</p>
+	</li>
+
+	<!-- Question 15 -->
+	<li>
+		<p>
+			<strong>Qus:</strong>Create CSS animation block to rotate an element that has the following properties: class "rotate-me" and It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin"
+		</p>
+		<p>
+			<strong>Ans:</strong>
+			.rotate-me {
+				animation:
+					spin 0.5s linear;
+					animation-iteration-count: 5;
+		}
+		</p>
+	</li>
 </body>
 </html>
